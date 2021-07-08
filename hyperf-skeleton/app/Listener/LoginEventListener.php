@@ -11,7 +11,7 @@ use Psr\Container\ContainerInterface;
 use Hyperf\Event\Contract\ListenerInterface;
 
 /**
- * @Listener
+ * @Listener(priority=1)
  */
 class LoginEventListener implements ListenerInterface
 {
