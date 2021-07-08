@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ea68fb18c45b40b8c0c45c3da2eeb763",
+    "content-hash": "bd109ff29c2714517f97bbd147339bc0",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -3221,6 +3221,62 @@
                 "utils"
             ],
             "time": "2021-04-09T03:45:20+00:00"
+        },
+        {
+            "name": "hyperf/watcher",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hyperf/watcher.git",
+                "reference": "aaf80d24ecc4a88a1e30c4ce7719f5c51eb8588c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hyperf/watcher/zipball/aaf80d24ecc4a88a1e30c4ce7719f5c51eb8588c",
+                "reference": "aaf80d24ecc4a88a1e30c4ce7719f5c51eb8588c",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-swoole": ">=4.5",
+                "hyperf/command": "~2.1.0",
+                "hyperf/di": "~2.1.0",
+                "hyperf/framework": "~2.1.0",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.14",
+                "hyperf/testing": "~2.1.0",
+                "phpstan/phpstan": "^0.12"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1-dev"
+                },
+                "hyperf": {
+                    "config": "Hyperf\\Watcher\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hyperf\\Watcher\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "hyperf",
+                "php"
+            ],
+            "time": "2021-03-12T12:14:44+00:00"
         },
         {
             "name": "jcchavezs/zipkin-opentracing",
@@ -9556,7 +9612,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "hyperf/watcher": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

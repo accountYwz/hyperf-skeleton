@@ -10,4 +10,10 @@ declare(strict_types=1);
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
 return [
+
+    \App\Listener\UserRegisteredListener::class,
+    \App\Listener\SendSmsListener::class,
+    \App\Listener\SendEmailListener::class,
+    \App\Listener\ValidateRegisterListener::class,
+    \App\Listener\LoginEventListener::class
 ];
